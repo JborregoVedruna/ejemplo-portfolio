@@ -10,5 +10,9 @@ jobs:
     helloworld:
         runs-on: ubuntu-latest
         steps:
-            - name: "Hello World"
+            - name: "Decir hola mundo"
               run: echo "Hello World"
+            - name: "Traernos el codigo"
+              uses: actions/checkout@v4
+            - name: "ver archivos"
+              run: ls
