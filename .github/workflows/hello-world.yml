@@ -1,0 +1,14 @@
+name: "Mi primer workflow"
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs:
+    helloworld:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Hello World"
+              run: echo "Hello World"
