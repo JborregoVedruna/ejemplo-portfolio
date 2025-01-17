@@ -23,6 +23,8 @@ jobs:
             - name: "ver archivos"
               run: ls
             - uses: withastro/action@v3
+              with:
+                package-manager: pnpm@7
     deploy:
       needs: helloworld
       runs-on: ubuntu-latest
